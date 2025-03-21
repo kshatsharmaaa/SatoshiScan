@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1400px;
+  width: 95%;
+  margin: auto;
+}
+
+/* Header Section */
+.cheader {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 107, 0, 0.5); /* Orange glow */
+  width: 100%;
+}
+
+.cheader h1 {
+  font-size: 2.5rem;
+  color: #FF6B00; /* Orange */
+  text-shadow: 0 0 15px rgba(255, 107, 0, 0.8);
+}
+
+.cheader p {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+/* Search Bar */
+.cheader input {
+  width: 50%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #FF3131; /* Red */
+  background: #121212;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.cheader input::placeholder {
+  color: #888;
+}
+
+.cheader input:focus {
+  border-color: #FF6B00; /* Orange */
+  box-shadow: 0 0 10px #FF6B00;
+}
+
+/* Coin Display */
+.cdisplay {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Coin Card */
+.coin {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 49, 49, 0.5); /* Red glow */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.coin:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.7); /* Orange glow on hover */
+}
+
+.coin img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.coin h1 {
+  font-size: 1.5rem;
+  color: #FF6B00; /* Orange */
+}
+
+.coin p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.coin p:first-of-type {
+  font-weight: bold;
+  color: #FF3131; /* Red */
+}
+
+/* Hide Scrollbars */
+body, .App {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+}
+
+body::-webkit-scrollbar, 
+.cdisplay::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
